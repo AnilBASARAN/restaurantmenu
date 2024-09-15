@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar ,faLocationDot} from '@fortawesome/free-solid-svg-icons';
+
 const RestaurantItem =(props)=>{
     const {restaurant} = props;
   
@@ -13,8 +16,10 @@ const RestaurantItem =(props)=>{
     <div className=" text-stone-600 text-xl">{restaurant.name}</div>
       <div className="flex justify-between">
   
-    <div className=" text-stone-400"><i class="fa-solid fa-location-dot mr-1 "></i>{restaurant.location}</div>
-    <div className="text-rose-400">{restaurant.rating} <i class="fa-solid fa-star"></i></div>
+    <div className=" text-stone-400"><FontAwesomeIcon icon={faLocationDot} className='mr-1'/>
+    
+    {restaurant.location}</div>
+    <div className="text-rose-400">{restaurant.rating} <FontAwesomeIcon icon={faStar} /></div>
         
       </div>
     <div>{restaurant.promotion}</div>
