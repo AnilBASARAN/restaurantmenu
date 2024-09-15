@@ -8,7 +8,7 @@ const RestaurantItem =(props)=>{
   
   <div className=" bg-white shadow-md m-5 pt-4 px-3 pb-2 relative ">
   
-    {restaurant.promotion && <div className="cupon bg-rose-400 absolute top-4 left-4 text-sm px-2 rounded-br-full" >Promotion</div>}
+    {restaurant.promotion && <div className="cupon bg-rose-400 absolute top-4 left-3 text-sm px-2 rounded-br-full" >Promotion</div>}
   
     
           <img src={restaurant.image} alt="" className="w-[220px] h-[200px] object-cover" />
